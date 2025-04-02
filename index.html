@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fotogram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+
+<body onload="render()">
+
+    <header>
+        <img class="logo" src="img/favicon/favicon.png" alt="">
+        <span class="fontlogo font">Fotogram</span>
+    </header>
+
+    <main>
+        <div onclick="closeOverlay()" id="overlay" class="d_none flex-center"></div>
+        <h1 class="font">Your personal photo album</h1>
+        <div id="photoalbum"></div>
+    </main>
+
+    <footer>
+        <span>&copy; 2025 Developer Akademie GmbH</span>
+    </footer>
     
 </body>
+
+<script src="script.js"></script>
+
 </html>
